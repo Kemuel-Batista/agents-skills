@@ -1,0 +1,6 @@
+graphify-out/
+
+# Third-party repositories are cloned locally from external/repos.tsv.
+external/*
+!external/repos.tsv
+
