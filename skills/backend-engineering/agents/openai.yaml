@@ -1,0 +1,4 @@
+interface:
+  display_name: "TypeScript Fastify Backend"
+  short_description: "Projetar backends TypeScript/Fastify completos"
+  default_prompt: "Use $backend-engineering para implementar esta mudança TypeScript/Fastify com o padrão completo de arquitetura, infraestrutura e testes."
