@@ -94,6 +94,36 @@ nome-do-diretorio<TAB>https://github.com/owner/repo.git
 Depois rode `update-external.sh` e escolha as skills desejadas com
 `install-external.sh`.
 
+### Skills de Instagram
+
+O [instagram-agent-skill](https://github.com/Jakeschincariol/instagram-agent-skill)
+esta registrado em `external/repos.tsv`. Para listar ou instalar as 13 skills:
+
+```bash
+./scripts/update-external.sh
+./scripts/install-external.sh --list --repo instagram-agent-skill
+./scripts/install-external.sh --all --repo instagram-agent-skill
+```
+
+Para instalar apenas algumas, use os nomes, por exemplo:
+
+```bash
+./scripts/install-external.sh ig-reel ig-caption ig-human
+```
+
+No Codex, invoque com `$ig-reel`, `$ig-caption` ou outra skill instalada.
+Os scripts auxiliares exigem Python 3. O clone preserva os arquivos originais
+para continuar recebendo atualizacoes; as skills usam `~/.claude/instagram/`
+para voz, historico e planejamento, inclusive quando executadas pelo Codex.
+
+Prepare o perfil de voz sem sobrescrever um arquivo existente e preencha-o
+com seu publico, tom de voz e exemplos:
+
+```bash
+mkdir -p ~/.claude/instagram
+cp -n external/instagram-agent-skill/templates/voice.md ~/.claude/instagram/voice.md
+```
+
 ## Criar e publicar este repositorio
 
 Se a pasta ainda nao for um repositorio Git, inicialize-a e conecte-a ao seu remoto:
