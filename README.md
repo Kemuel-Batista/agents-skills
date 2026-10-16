@@ -124,6 +124,28 @@ mkdir -p ~/.claude/instagram
 cp -n external/instagram-agent-skill/templates/voice.md ~/.claude/instagram/voice.md
 ```
 
+### Skills de Go
+
+O [cc-skills-golang](https://github.com/samber/cc-skills-golang) esta registrado
+em `external/repos.tsv`. Para baixar e instalar o conjunto completo no Codex
+e no Claude Code:
+
+```bash
+./scripts/update-external.sh
+./scripts/install-external.sh --all --repo cc-skills-golang
+```
+
+Para consultar as skills disponiveis ou instalar apenas algumas:
+
+```bash
+./scripts/install-external.sh --list --repo cc-skills-golang
+./scripts/install-external.sh --repo cc-skills-golang golang-testing golang-concurrency
+```
+
+O autor recomenda instalar o conjunto completo, pois as skills referenciam umas
+as outras. Para atualizar o conteudo, execute `./scripts/update-external.sh`;
+os links existentes passam a usar a versao atualizada.
+
 ## Criar e publicar este repositorio
 
 Se a pasta ainda nao for um repositorio Git, inicialize-a e conecte-a ao seu remoto:
