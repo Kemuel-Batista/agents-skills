@@ -146,6 +146,20 @@ O autor recomenda instalar o conjunto completo, pois as skills referenciam umas
 as outras. Para atualizar o conteudo, execute `./scripts/update-external.sh`;
 os links existentes passam a usar a versao atualizada.
 
+### Content Principles
+
+O [content-principles](https://github.com/aiwithremy/content-principles) esta
+registrado em `external/repos.tsv`. Para instalar a skill no Codex e no Claude
+Code:
+
+```bash
+./scripts/update-external.sh
+./scripts/install-external.sh --all --repo content-principles
+```
+
+No Codex, invoque com `$content-principles` para criar ou revisar roteiros de
+videos curtos, ganchos e posts com foco em atencao e curiosidade.
+
 ## Criar e publicar este repositorio
 
 Se a pasta ainda nao for um repositorio Git, inicialize-a e conecte-a ao seu remoto:
