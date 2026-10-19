@@ -139,6 +139,42 @@ No Codex, invoque com `$viral-instagram-reels` para criar roteiros, melhorar
 ganchos ou analisar o desempenho de Reels. O clone preserva as referencias e
 os modelos originais; `update-external.sh` atualiza o conteudo pelos links.
 
+### Skills da CreatorSkills
+
+Estas skills ficam versionadas em `skills/`, com as instrucoes principais
+disponibilizadas nas paginas originais e metadados para descoberta no Codex e
+no Claude Code:
+
+- [Instagram Reels Script Writer](https://creatorskills.co/skills/instagram-reels-script-writer):
+  `$instagram-reels-script-writer` gera roteiros com falas, cenas e texto na tela.
+- [Content Repurposing Planner](https://creatorskills.co/skills/content-repurposing-planner):
+  `$content-repurposing-planner` planeja como transformar aulas, lives e videos
+  longos em Reels e outros conteudos; nao edita os videos.
+- [Newsletter Subscriber Growth Engine](https://creatorskills.co/skills/newsletter-subscriber-growth-engine):
+  `$newsletter-subscriber-growth-engine` ajuda a planejar captacao de emails,
+  materiais gratuitos e mensagens de boas-vindas para interessados no curso.
+- [Content Idea Brainstormer](https://creatorskills.co/skills/content-idea-brainstormer):
+  `$content-idea-brainstormer` gera ideias especificas de conteudo para seu nicho.
+- [Creator Bio Generator](https://creatorskills.co/skills/creator-bio-generator):
+  `$creator-bio-generator` escreve bios adaptadas ao publico e a plataforma.
+- [Email Subject Line Optimizer](https://creatorskills.co/skills/email-subject-line-optimizer):
+  `$email-subject-line-optimizer` cria opcoes de assunto para emails e lancamentos.
+- [Creator Productivity Second Brain](https://creatorskills.co/skills/creator-productivity-second-brain):
+  `$creator-productivity-second-brain` organiza metas, ideias e rotina de producao.
+
+Os corpos das instrucoes foram preservados; os cabecalhos foram adicionados ou
+ajustados para identificar as skills e registrar a fonte. Os arquivos auxiliares
+`README.md` e `EXAMPLE.md` anunciados nos pacotes nao estao incluidos.
+
+Para instalar nesta ou em outra maquina apos clonar o projeto:
+
+```bash
+./scripts/install.sh
+```
+
+Estas copias recebem atualizacoes pelo Git deste projeto; atualizacoes das
+fontes precisam ser incorporadas manualmente.
+
 ### Skills de Go
 
 O [cc-skills-golang](https://github.com/samber/cc-skills-golang) esta registrado
