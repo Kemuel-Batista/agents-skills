@@ -124,6 +124,21 @@ mkdir -p ~/.claude/instagram
 cp -n external/instagram-agent-skill/templates/voice.md ~/.claude/instagram/voice.md
 ```
 
+### Viral Instagram Reels
+
+O [content-skills da Vyral](https://github.com/vyralcontent/content-skills) esta
+registrado em `external/repos.tsv`. Para instalar somente a skill de Reels no
+Codex e no Claude Code, inclusive em outra maquina apos clonar este projeto:
+
+```bash
+./scripts/update-external.sh
+./scripts/install-external.sh vyralcontent-skills:viral-instagram-reels
+```
+
+No Codex, invoque com `$viral-instagram-reels` para criar roteiros, melhorar
+ganchos ou analisar o desempenho de Reels. O clone preserva as referencias e
+os modelos originais; `update-external.sh` atualiza o conteudo pelos links.
+
 ### Skills de Go
 
 O [cc-skills-golang](https://github.com/samber/cc-skills-golang) esta registrado
